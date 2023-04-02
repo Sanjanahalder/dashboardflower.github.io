@@ -1,0 +1,120 @@
+*{
+         margin: 0;
+         padding: 0;
+         text-decoration: none;
+         box-sizing: border-box;
+}
+#navbar{
+         position: fixed;
+         background: transparent;
+         width: 100%;
+         padding: 30px 0;
+         top: 0;
+         z-index: 100;
+         line-height: 20px;
+}
+.inner{
+         max-width: 1300px;
+         margin: auto;
+         padding: 0 40px;
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+}
+.logo{
+         font-size: 30px;
+         letter-spacing: 3px;
+         font-weight: 500;
+         font-family:Georgia, 'Times New Roman', Times, serif;
+         color:white;
+         cursor: pointer;
+}
+.logo span{
+         font-size: 38px;
+         color:black;
+}
+.navbar-menu a{
+         font-size: 13px;
+         font-weight: 500;
+         font-family:Verdana, Geneva, Tahoma, sans-serif;
+         color:black;
+         text-transform: uppercase;
+         letter-spacing: 2px;
+         margin-left: 35px;
+         display: inline-block;
+       
+}
+.navbar-menu a::after{
+         content: "";
+         display: block;
+         width: 0;
+         height: 1.8px;
+         background-color:fuchsia;
+         transition: width .3s;
+}
+.navbar-menu a:hover::after{
+         width: 100%;
+        
+}
+#home{
+         height: 100vh;
+         display: grid;
+         grid-template-columns: 1fr 1fr;
+
+}
+.content1{
+         background-color:#ad967c;
+}
+.content2{
+         background-image:url(img1.jpeg);
+         background-position: center;
+         background-size: cover;
+}
+.content1 .content{
+         position: absolute;
+         background-color:#ad967c;
+         padding: 20px;
+         left: 150px;
+         top: 340px;
+         text-align: left;
+         width: 600px;
+         height: 360px;
+         color:black;
+}
+.content p{
+         font-size: 15px;
+         line-height: 25px;
+         font-weight: 500;
+         letter-spacing: 1.1px;
+         font-family: 'Raleway',sans-serif;
+}
+.content button{
+         padding: 17px 20px;
+         margin: 15px;
+         cursor: pointer;
+         border: none;
+         font-size: 17px;
+         font-weight: 500px;
+         letter-spacing: 1.1px;
+         text-transform: uppercase;
+         background-color:darkgoldenrod;
+         color:white;
+         outline: none;
+         font-family:'Courier New', Courier, monospace;
+}
+.content button:hover{
+         color :black;
+}
+.content2 h1{
+         position: absolute;
+         font-size: 70px;
+         top:240px;
+         left: 200px;
+         font-family:'Raleway',sans-serif;
+         font-weight: 500;
+         letter-spacing: 7px;
+}
+.content2 h1 span{
+         color:white;
+
+}
